@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.truncated-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Nombre de lignes affichées */
+    -webkit-box-orient: vertical;
+    height: calc(1.5em * 3); /* Hauteur selon la ligne (1.5em ici) */
+}
